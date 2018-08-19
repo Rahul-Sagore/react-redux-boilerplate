@@ -9,7 +9,7 @@ class Header extends Component {
           src={this.props.logo}
           className='react-logo'
         />
-        React is working! Wooohooo
+        React and Redux is working!
       </div>
     )
   }

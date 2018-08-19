@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const webpackDashboard = require('webpack-dashboard/plugin');
 
 module.exports = {
   module: {
@@ -19,6 +20,7 @@ module.exports = {
     }]
   },
   plugins: [
+    new webpackDashboard(),
     new HtmlWebPackPlugin({
       template: "./src/index.html",
       filename: "./index.html"
